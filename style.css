@@ -1,0 +1,164 @@
+body {
+    font-family: sans-serif;
+}
+
+h1{
+    font-size: large;
+    font-weight: 400;
+}
+
+main {
+    margin: auto;
+    width: 750px;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 95% 5%;
+    grid-gap: 0px;
+    background: rgb(14, 84, 83);
+    background: rgb(14, 68, 84);
+}
+
+.lift-display {
+    background: rgb(161, 218, 255);
+    height: 500px;
+    margin: 10px;
+    text-align: center;
+}
+
+.lift-buttons {
+    height: 500px;
+    margin: 10px;
+}
+
+.power {
+    margin: 5px 10px;
+}
+
+.Maintenance {
+    color: white;
+    margin: 5px 10px;
+    text-align: center;
+}
+
+.power {
+    text-align: center;
+}
+
+#lift1 {
+    height: 100px;
+    width: 100px;
+    border: none;
+    background-color: gray;
+    color: white;
+    position: relative;
+    margin: 0px auto;
+    top: 397px;
+}
+
+#lift2 {
+    height: 100px;
+    width: 100px;
+    border: none;
+    background-color: gray;
+    color: white;
+    position: relative;
+    margin: 0px auto;
+    top: 397px;
+}
+
+#lift3 {
+    height: 100px;
+    width: 100px;
+    border: none;
+    background-color: gray;
+    color: white;
+    position: relative;
+    margin: 0px auto;
+    top: 297px;
+}
+
+.floor-buttons {
+    height: 100px;
+}
+
+.floor {
+    height: 8px;
+    width: 8px;
+    padding: 2px 5px;
+    margin: 0px 10px;
+    border: 1px solid rgb(4, 26, 25);
+    border-radius: 50%;
+    font-size: large;
+    background: rgb(9, 34, 42);
+    color: white;
+    text-align: center;
+}
+
+.buttons {
+    margin: 0px 0px 0px 10px;
+    font-size: 4em;
+}
+
+button {
+    font-size: large;
+    border-radius: 50%;
+    border: 1px solid rgb(4, 26, 25);
+    color: white;
+    background: rgb(4, 26, 25);
+}
+
+button:hover {
+    font-size: large;
+    border-radius: 50%;
+    color: black;
+    background: rgb(161, 218, 255);
+}
+
+/*------------------ Toggle Switch------------------*/
+.toggle {
+    cursor: pointer;
+    display: inline-block;
+  }
+  
+  .toggle-switch {
+    display: inline-block;
+    background: #ccc;
+    border-radius: 6px;
+    width: 23px;
+    height: 12px;
+    position: relative;
+    vertical-align: middle;
+    transition: background 0.25s;
+  }
+  .toggle-switch:before, .toggle-switch:after {
+    content: "";
+  }
+  .toggle-switch:before {
+    display: block;
+    background: linear-gradient(to bottom, #fff 0%, #eee 100%);
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    transition: left 0.25s;
+  }
+  .toggle-checkbox:checked + .toggle-switch {
+    background: #0238bf;
+  }
+  .toggle-checkbox:checked + .toggle-switch:before {
+    left: 13px;
+  
+  }
+  
+  .toggle-checkbox {
+    position: absolute;
+    visibility: hidden;
+  }
+  
+  .toggle-label {
+    margin-left: 5px;
+    position: relative;
+    top: 2px;
+  }

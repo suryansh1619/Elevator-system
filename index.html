@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lift Project</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1>
+      Elevator System
+    </h1>
+  </header>
+  <hr>
+  <main id="main">
+    <section class="lift-display">
+      <div class="greybox" id="lift1">
+        <span class="lnum" id="l1num">
+          1
+        </span>
+      </div>
+    </section>
+    <section class="lift-display">
+      <div class="greybox" id="lift2">
+        <span class="lnum" id="l2num">
+          1
+        </span>
+      </div>
+    </section>
+    <section class="lift-display">
+      <div class="greybox" id="lift3">
+        <span class="lnum" id="l3num">
+          2
+        </span>
+      </div>
+    </section>
+
+    <section class="lift-buttons">
+      <div class="floor-buttons" id="floor5">
+        <span class="floor">
+          5
+        </span>
+        <span class="buttons">
+          <button onclick="Moves(0)" type="button">
+            &blacktriangledown;
+          </button>
+        </span>
+      </div>
+      <div class="floor-buttons" id="floor4">
+        <span class="floor">
+          4
+        </span>
+        <span class="buttons">
+          <button onclick="Moves(97)" type="button">
+            &blacktriangle;
+          </button>
+        </span>
+        <span>
+          <button onclick="Moves(97)" type="button">
+            &blacktriangledown;
+          </button>
+        </span>
+      </div>
+      <div class="floor-buttons" id="floor3">
+        <span class="floor">
+          3
+        </span>
+        <span class="buttons">
+          <button onclick="Moves(197)" type="button">
+            &blacktriangle;
+          </button>
+        </span>
+        <span>
+          <button onclick="Moves(197)" type="button">
+            &blacktriangledown;
+          </button>
+        </span>
+      </div>
+      <div class="floor-buttons" id="floor2">
+        <span class="floor">
+          2
+        </span>
+        <span class="buttons">
+          <button onclick="Moves(297)" type="button">
+            &blacktriangle;
+          </button>
+        </span>
+        <span>
+          <button onclick="Moves(297)" type="button">
+            &blacktriangledown;
+          </button>
+        </span>
+      </div>
+      <div class="floor-buttons" id="floor1">
+        <span class="floor">
+          1
+        </span>
+        <span class="buttons">
+          <button onclick="Moves(397)" type="button">
+            &blacktriangle;
+          </button>
+        </span>
+      </div>
+    </section>
+
+    <section class="power">
+      <label class="toggle">
+        <input class="toggle-checkbox" type="checkbox" id="t1" checked>
+        <div class="toggle-switch"></div>
+      </label>
+    </section>
+    <section class="power">
+      <label class="toggle">
+        <input class="toggle-checkbox" type="checkbox" id="t2" checked>
+        <div class="toggle-switch"></div>
+      </label>
+    </section>
+    <section class="power">
+      <label class="toggle">
+        <input class="toggle-checkbox" type="checkbox" id="t3">
+        <div class="toggle-switch"></div>
+      </label>
+    </section>
+    <section class="Maintenance">
+      Maintenance
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+
+</html>
